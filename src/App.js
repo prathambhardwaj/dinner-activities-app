@@ -49,17 +49,19 @@ function App() {
         <button
           type="button"
           className="btn btn-primary"
-          onClick={() => handleCategoryChange("dinner")}
-        >
-          Dinner
-        </button>
-        <button
-          type="button"
-          className="btn btn-primary"
           onClick={() => handleCategoryChange("day")}
         >
           Day Activities
         </button>
+        '
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={() => handleCategoryChange("dinner")}
+        >
+          Dinner
+        </button>
+        '
       </header>
       <CardList
         items={items}
