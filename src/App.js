@@ -20,6 +20,11 @@ const dayActivities = [
     name: "Option 2",
     description: "Watch a movie on an iPad at the hotel",
   },
+  {
+    id: 3,
+    name: "Option 3",
+    description: "Sit at home, watch zehar movie",
+  },
   // Add more items as needed
 ];
 
