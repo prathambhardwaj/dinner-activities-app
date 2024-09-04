@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CardList from "./CardList";
 import "./App.css"; // Add your custom styles
+import Modal from "./Modal";
 
 const dinnerItems = [
   { id: 1, name: "Dinner Option 1", description: "Mocha" },
@@ -31,6 +32,7 @@ const dayActivities = [
 function App() {
   const [selectedItem, setSelectedItem] = useState(null);
   const [category, setCategory] = useState("day");
+  const [showModal, setShowModal] = useState(true);
 
   const handleCardClick = (item) => {
     setSelectedItem(selectedItem?.id === item.id ? null : item);
@@ -41,10 +43,20 @@ function App() {
     setSelectedItem(null); // Reset selection when changing categories
   };
 
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   const items = category === "dinner" ? dinnerItems : dayActivities;
 
   return (
     <div className="App">
+      {showModal && (
+        <Modal
+          message="Happy Birthday Gabbbbbuuuuuuu ♥♥♥♥♥"
+          onClose={handleCloseModal}
+        />
+      )}
       <header>
         <button
           type="button"
