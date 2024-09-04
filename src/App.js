@@ -8,7 +8,8 @@ const dinnerItems = [
   { id: 3, name: "Option 3", description: "Farzi Cafe" },
   { id: 4, name: "Option 4", description: "CC" },
   { id: 5, name: "Option 5", description: "Yacht Club" },
-  { id: 6, name: "Option 5", description: "T9" },
+  { id: 6, name: "Option 6", description: "T9" },
+  { id: 7, name: "Option 7", description: "Dhuaan" },
   // Add more items as needed
 ];
 
