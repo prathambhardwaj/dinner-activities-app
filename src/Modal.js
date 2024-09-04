@@ -1,6 +1,6 @@
-// src/components/Modal.js
 import React, { useEffect, useState } from "react";
 import "./Modal.css"; // Import the CSS for styling
+import Confetti from "./Confetti";
 
 function Modal({ message, onClose }) {
   const [isVisible, setIsVisible] = useState(true);
@@ -17,7 +17,8 @@ function Modal({ message, onClose }) {
   if (!isVisible) return null;
 
   return (
-    <div className="modal-overlay">
+    <div className="modal-overlay celebration">
+      <Confetti />
       <div className="modal-content">
         <h1>{message}</h1>
       </div>
