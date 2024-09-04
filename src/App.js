@@ -53,15 +53,13 @@ function App() {
         >
           Day Activities
         </button>
-        '
         <button
           type="button"
           className="btn btn-primary"
           onClick={() => handleCategoryChange("dinner")}
         >
-          Dinner
+          Dinner Options
         </button>
-        '
       </header>
       <CardList
         items={items}
